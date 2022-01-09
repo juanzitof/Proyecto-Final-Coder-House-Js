@@ -1,4 +1,4 @@
-## Proyecto Final de Curso de Java Script
+## Proyecto Final de Curso de Java Script Coder House
 ## Simulador de Home Banking
 ## Librerias utilizadas en el proyecto
 - [Jquery]v-3.6.0 
@@ -8,7 +8,7 @@
 
 ## Para el funcionamiento del simulador
 #### Inicio
-- Al correr el simulador aparece el modal de ingreso en el que solicita un nombre de usuario y contraseña.
+- Al correr el simulador aparece la pantalla del login de ingreso en el que solicita un nombre de usuario y contraseña.
 - Para poder ingresar, existen ya usuarios logeados (que se encuentran en el archivo users.json) los cuales son:
 
 - Username mavelda12 | Password 1212
@@ -17,6 +17,7 @@
 
 ### Ya ingresado
 - Los usuario ya tienen su numero de cuenta y la informacion pertinente de cada cuenta.
+- La sesion de cada usuario es persistente, si se refresca la página la informacion no se elimina.
 - Se muestra en una tabla las operaciones ya cargadas de cada usuario (que se encuentran en el archivo operations.json).
 - Con la excepción del usuario jacinlu que no tiene operaciones y aparece cartel de vacio.
 
@@ -30,3 +31,4 @@
 
 
 
+Desarrollado por Juan Fuentes
