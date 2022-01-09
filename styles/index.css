@@ -1,0 +1,334 @@
+body {
+    margin: 0;
+    font-family: "Arial", sans-serif;
+    background-color: #2a333d;
+  }
+  
+  #home-page {
+    display: none;
+  }
+  
+  #login-page {
+    display: none;
+    margin-top: 20%;
+  }
+  
+  #main-loading {
+    position: absolute;
+    display: none;
+  }
+  
+  #main-loading .loading-container {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 9900;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 80px;
+    color: #fff;
+  }
+  
+  #main-loading span {
+    animation: rotating 4s linear infinite;
+    -webkit-animation: rotating 4s linear infinite;
+  }
+  
+  .header {
+    display: flex;
+    width: 65%;
+    margin: 15px auto 0;
+    margin-bottom: 15px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .usuario-container {
+    display: flex;
+    padding: 8px;
+  }
+  
+  #btn-logout {
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  /* Estilos de la pagina principal */
+  .white-container {
+    display: flex;
+    width: 65%;
+    padding: 30px;
+    margin: 0 auto;
+    box-sizing: border-box;
+  
+    border: 1px solid #979797;
+    border-radius: 8px;
+    background-color: #fff;
+  
+    justify-content: center;
+  }
+  
+  .menu-container {
+    display: block;
+    width: 35%;
+    padding-right: 20px;
+  }
+  
+  .you-account {
+    padding-left: 24px;
+    margin: 0;
+    margin-left: -30px;
+    font-size: 32px;
+    font-weight: normal;
+  
+    color: #2a333d;
+    border-left: 6px solid #2cc197;
+  }
+  
+  #name-body{
+    display: inline-block;
+    margin-right: 10px;
+    overflow: hidden;
+  
+    font-size: 20px;
+  
+    text-overflow: ellipsis;
+  
+    color: #fff;
+  }
+  
+  .green-container {
+    display: flex;
+    width: 65%;
+    box-sizing: border-box;
+  
+    text-align: center;
+  
+    color: white;
+    border-radius: 8px;
+    background-color: #2cc197;
+  
+    align-items: center;
+  }
+  
+  .account-info {
+    display: block;
+    width: 100%;
+  }
+  
+  .links {
+    position: relative;
+  
+    display: block;
+    padding: 0;
+    margin: 20px 0;
+    margin-bottom: 30px;
+    font-size: 16px;
+  
+    cursor: pointer;
+    -webkit-transition: padding 0.6s ease-in-out;
+    -moz-transition: padding 0.6s ease-in-out;
+    -o-transition: padding 0.6s ease-in-out;
+    transition: padding 0.6s ease-in-out;
+    text-align: left;
+  
+    color: #666;
+    border: 0;
+    background-color: transparent;
+  }
+  
+  .links:hover {
+    padding-left: 5px;
+    font-weight: bold;
+    color: #2cc197;
+  }
+  
+  .saldo-container span {
+    display: block;
+    font-size: 22px;
+  }
+  
+  #saldo-cuenta {
+    overflow: hidden;
+    text-align: center;
+    text-overflow: ellipsis;
+    font-size: 60px;
+    line-height: 50px;
+  }
+  
+  
+  
+  /* Contenedor del modal */
+  .modalContainer {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  
+  .title {
+    padding-left: 10px;
+    padding-top: 15px;
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  /* Estilos de los inputs */
+  .input-NameUsu {
+    margin-left: 15px;
+    padding-top: 5px;
+    margin-bottom: 15px;
+  }
+  .input-Passw {
+    margin-left: 70px;
+    padding-top: 5px;
+    margin-bottom: 15px;
+  }
+  
+  .input-Count {
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  
+  /* Tabla de historico de operaciones */
+  .operacion {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 12px;
+    margin-top: 12px;
+  }
+  
+  .operacion .data {
+    flex: 1;
+  }
+  
+  .operacion .data .tipo {
+    display: inline-block;
+    margin-left: 20px;
+    color: #888;
+  }
+  .operaciones  {
+    background: white;
+    margin: 50px auto;
+    padding: 25px;
+    width: 65%;
+    border-radius: 8px;
+    box-sizing: border-box;
+  }
+  .operacion .monto {
+    font-weight: bold;
+  }
+  .table {
+    background-color: whitesmoke;
+  }
+  
+  .operation-empty{
+    text-align: center;
+    color: #888;
+  }
+  .msg-empty{
+    font-size: 14px;
+  }
+  /* Modales */
+  #sombra {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+  }
+  #modal {
+    margin: 10% auto;
+    max-width: 400px;
+    background-color: #fff;
+    min-height: 200px;
+    border-radius: 15px;
+    display: none;
+    position: relative;
+    padding: 60px 30px 30px 30px;
+  }
+  #close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  
+  .title-form {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 0px;
+  }
+  
+  #shadow {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+  }
+  #modal-deposit {
+    margin: 10% auto;
+    max-width: 500px;
+    background-color: #fff;
+    min-height: 300px;
+    border-radius: 8px;
+    display: none;
+    position: relative;
+    padding: 60px 30px 30px 30px;
+  }
+  #close-modal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  
+  .style-dolar h1 {
+    font-size: 16px;
+    align-content: center;
+  }
+  
+  .swal2-styled.swal2-confirm {
+    background-color: gray;
+  }
+  
+  @keyframes rotating {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @-webkit-keyframes rotating {
+    from {
+      -webkit-transform: rotate(0deg);
+    }
+    to {
+      -webkit-transform: rotate(360deg);
+    }
+  }
