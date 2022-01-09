@@ -1,0 +1,26 @@
+[
+    {
+      "id": 1,
+      "name": "Maria",
+      "lastname": "Aveldano",
+      "username": "mavelda12",
+      "password": "1212",
+      "accountNumber": "12345678"
+    },
+    {
+      "id": 2,
+      "name": "Jose",
+      "lastname": "Esposito",
+      "username": "josesp",
+      "password": "3619",
+      "accountNumber": "23456789"
+    },
+    {
+      "id": 3,
+      "name": "Jacinto",
+      "lastname": "Luque",
+      "username": "jacinlu",
+      "password": "6582",
+      "accountNumber": "34567890"
+    }
+  ]
