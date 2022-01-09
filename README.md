@@ -1,4 +1,4 @@
-# Proyecto Final de Curso de Java Script
+## Proyecto Final de Curso de Java Script
 ## Simulador de Home Banking
 ## Librerias utilizadas en el proyecto
 - [Jquery]v-3.6.0 
