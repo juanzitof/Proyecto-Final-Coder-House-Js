@@ -1,5 +1,6 @@
 ## Proyecto Final de Curso de Java Script Coder House
 ## Simulador de Home Banking
+Realizado durante la cursada de curso de JavaScript en Coder House.
 ## Librerias utilizadas en el proyecto
 - [Jquery]v-3.6.0 
 - [Bootstrap]v-5.1.3
